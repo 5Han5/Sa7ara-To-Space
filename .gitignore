@@ -1,0 +1,73 @@
+# ==========================================
+# 1. NASA Datasets & GIS Files (Crucial)
+# ==========================================
+# GitHub blocks files over 100MB. These extensions cover 
+# the standard NASA Earthdata, MRO, and LRO formats.
+*.csv
+*.hdf
+*.hdf5
+*.nc
+*.tif
+*.tiff
+*.gdb/
+
+# GIS Shapefiles (often used for mapping topography)
+*.shp
+*.shx
+*.dbf
+*.prj
+
+# Ignore your team's local data download folders
+# (This allows you to safely dump files here without Git tracking them)
+data/
+datasets/
+!data/sample_data.csv  # Keep one small sample file for testing
+
+# ==========================================
+# 2. Python & Analytics 
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.ipynb_checkpoints/
+
+# ==========================================
+# 3. Frontend / Web App (HTML/JS/Node)
+# ==========================================
+node_modules/
+dist/
+build/
+.npm/
+
+# ==========================================
+# 4. C++ & Java (Just in case you use them)
+# ==========================================
+*.exe
+*.o
+*.out
+*.class
+*.jar
+
+# ==========================================
+# 5. Secrets & API Keys
+# ==========================================
+.env
+.env.local
+secrets.json
+credentials.json
+
+# ==========================================
+# 6. IDEs & Operating Systems
+# ==========================================
+# Ignores VS Code and IntelliJ local settings
+.vscode/
+.idea/
+*.iml
+
+# Ignores Windows and Mac hidden system files
+Thumbs.db
+desktop.ini
+.DS_Store
